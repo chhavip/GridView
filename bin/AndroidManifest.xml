@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gridview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SessionManager"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+              </activity>
+              <activity
+            android:name=".Self"
+            android:label="self" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+       
+        </activity>
+        <activity
+            android:name=".data.UserData"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Table"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name=".Assignment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Calender"
+            android:label="@string/app_name" >
+        </activity>        
+    </application>
+
+</manifest>
